@@ -1,0 +1,33 @@
+--------------------
+------- README -----
+--------------------
+
+  - compiler.js -
+	
+	Compiles the made up music language MUS into the madeup music language NOTE.
+	
+	// returns object
+	var noteLanguage = compile(musexpr);
+   
+  - prettyPrint.js -
+	
+	Takes an object in NOTE format and prints it using the function of choice.
+   
+
+// MUS Language
+{ tag: 'seq',
+  left: 
+   { tag: 'seq',
+     left: { tag: 'note', pitch: 'a4', dur: 250 },
+     right: { tag: 'note', pitch: 'b4', dur: 250 } },
+  right:
+   { tag: 'seq',
+     left: { tag: 'note', pitch: 'c4', dur: 500 },
+     right: { tag: 'note', pitch: 'd4', dur: 500 } } }
+
+	 
+// NOTE Language
+[ { tag: 'note', pitch: 'a4', start: 0, dur: 250 },
+  { tag: 'note', pitch: 'b4', start: 250, dur: 250 },
+  { tag: 'note', pitch: 'c4', start: 500, dur: 500 },
+  { tag: 'note', pitch: 'd4', start: 1000, dur: 500 } ]
