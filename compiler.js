@@ -7,7 +7,7 @@
 var compile = function (musexpr) {
     var time = 0;
     var notes = [];
-	duration = 0;
+    var duration = 0;
     
     var section = function(expr, increment) {
 		if (expr.tag === 'seq') {
@@ -31,7 +31,7 @@ var compile = function (musexpr) {
 			notes.push(toReturn);
 		}
     };
-	section(musexpr);
+    section(musexpr);
     return notes;
 };
 
