@@ -2,7 +2,7 @@
  * Compiles the made up music language MUS into the madeup music language NOTE.
  *
  * @param {Object} musexpr An object structured in the MUS Language.
- * @returns {Object} Returns an object sructured in the NOTE Language.
+ * @return {Object} Returns an object sructured in the NOTE Language.
  */
 var compile = function (musexpr) {
     var time = 0;
