@@ -1,4 +1,5 @@
 /**
+  * Compiles the made up music language MUS into the madeup music language NOTE.
   * @module
   */
 var compiler = function() {
@@ -7,6 +8,7 @@ var compiler = function() {
     *
     * @param {Object} musexpr An object structured in the MUS Language.
     * @returns {Object} Returns an object sructured in the NOTE Language.
+    * @memberOf compiler
     */
   this.compile = function (musexpr) {
       var time = 0;
@@ -35,7 +37,4 @@ var compiler = function() {
       section(musexpr);
       return notes;
     };
-    
-  };
- }
-
+};
